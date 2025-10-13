@@ -2,4 +2,4 @@ Trust Meter is a fake news detection app built with the MERN stack (MongoDB, PlS
 
 
 Open the given link to check the output of the project
-https://trust-meter-app.vercel.app/auth
+https://trust-meter-app.vercel.app/
