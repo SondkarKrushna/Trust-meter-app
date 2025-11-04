@@ -104,14 +104,24 @@ const Auth = () => {
 
   const handleGoogleAuth = async () => {
     try {
-      const { error } = await supabase.auth.signInWithOAuth({
+      const { data, error } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
           redirectTo: `${window.location.origin}/`,
+          skipBrowserRedirect: true,
         },
       });
-      
       if (error) throw error;
+      if (data?.url) {
+        const target = window.top ?? window;
+        target.location.href = data.url;
+      } else {
+        toast({
+          title: "Error",
+          description: "Could not start Google sign-in. Please try again.",
+          variant: "destructive",
+        });
+      }
     } catch (error: any) {
       toast({
         title: "Error",
@@ -123,14 +133,24 @@ const Auth = () => {
 
   const handleGithubAuth = async () => {
     try {
-      const { error } = await supabase.auth.signInWithOAuth({
+      const { data, error } = await supabase.auth.signInWithOAuth({
         provider: "github",
         options: {
           redirectTo: `${window.location.origin}/`,
+          skipBrowserRedirect: true,
         },
       });
-      
       if (error) throw error;
+      if (data?.url) {
+        const target = window.top ?? window;
+        target.location.href = data.url;
+      } else {
+        toast({
+          title: "Error",
+          description: "Could not start GitHub sign-in. Please try again.",
+          variant: "destructive",
+        });
+      }
     } catch (error: any) {
       toast({
         title: "Error",
