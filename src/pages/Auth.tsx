@@ -200,34 +200,10 @@ const Auth = () => {
   };
 
   const handleGithubAuth = async () => {
-    try {
-      const { data, error } = await supabase.auth.signInWithOAuth({
-        provider: "github",
-        options: {
-          redirectTo: `${window.location.origin}/`,
-          skipBrowserRedirect: true,
-        },
-      });
-
-      if (error) throw error;
-
-      if (data?.url) {
-        const target = window.top ?? window;
-        target.location.href = data.url;
-      } else {
-        toast({
-          title: "Error",
-          description: "Could not start GitHub sign-in. Please try again.",
-          variant: "destructive",
-        });
-      }
-    } catch (error: any) {
-      toast({
-        title: "Error",
-        description: getAuthErrorMessage(error, "Failed to sign in with GitHub"),
-        variant: "destructive",
-      });
-    }
+    toast({
+      title: "GitHub sign-in unavailable",
+      description: "GitHub login isn't supported in this backend yet. Please use email/password or Google.",
+    });
   };
 
   const openInNewTab = () => {
@@ -236,6 +212,7 @@ const Auth = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/30 to-background p-4">
+      <h1 className="sr-only">Login to Fake News Detector</h1>
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader className="space-y-2 text-center">
           <div className="flex justify-center mb-2">
@@ -306,7 +283,7 @@ const Auth = () => {
                 </Button>
                 <Button variant="outline" onClick={handleGithubAuth} disabled={loading}>
                   <Github className="mr-2 h-4 w-4" />
-                  GitHub
+                  GitHub (unavailable)
                 </Button>
               </div>
             </TabsContent>
@@ -356,7 +333,7 @@ const Auth = () => {
                 </Button>
                 <Button variant="outline" onClick={handleGithubAuth} disabled={loading}>
                   <Github className="mr-2 h-4 w-4" />
-                  GitHub
+                  GitHub (unavailable)
                 </Button>
               </div>
             </TabsContent>
