@@ -1,23 +1,116 @@
 🛡️ Fake News Detector – AI-Powered News Authenticity Checker
 
-Fake News Detector is a MERN stack web application integrated with AI/ML models to verify the credibility of online news articles. The platform allows users to securely sign in and analyze any news URL to determine whether the content is credible, suspicious, or fake. The system leverages Natural Language Processing techniques to extract article content and evaluate news authenticity, providing a confidence score and a detailed reliability analysis.
+Fake News Detector is a MERN stack web application integrated with AI/ML models to analyze the credibility of online news. The platform allows users to paste any news URL and receive a credibility score, verdict, and detailed analysis report powered by Natural Language Processing (NLP).
 
-<img width="1917" height="904" alt="Screenshot 2025-12-30 102947" src="https://github.com/user-attachments/assets/b87ed647-6a58-45c8-950f-3ceddc9f861f" />
+This project aims to combat misinformation by validating source reliability, content legitimacy, and sensational framing – helping users identify fake or misleading news online.
 
-Once authenticated, users are directed to a modern and intuitive dashboard where they can paste a news URL. The backend fetches and processes the article using an AI model trained on real and fake news datasets. It checks source reliability, factual accuracy, presence of sensational language, and dataset-supported credibility patterns. During the evaluation, a loading state reflects the ongoing analysis.
+🚀 Live Demo
 
-<img width="1917" height="914" alt="Screenshot 2025-12-30 103020" src="https://github.com/user-attachments/assets/07e3cf90-1340-41c0-ba8a-daaaf0a9d0d8" />
+🔗 Check it out here:
+👉 https://trust-meter-app.vercel.app/
 
-When the AI completes its evaluation, users receive a comprehensive breakdown that includes the credibility verdict, percentage confidence score, explanation of reasoning, and key findings about the article’s trustworthiness. This enhances transparency and boosts user trust by showing not just the prediction but the logic behind it.
+📌 Features
 
-<img width="1919" height="909" alt="Screenshot 2025-12-30 103121" src="https://github.com/user-attachments/assets/6d6c5120-67da-434c-92f7-b70db07e3e72" />
+✔ Secure Authentication (Email/Password & Google Sign-In)
+✔ Paste any news article URL for analysis
+✔ AI-powered credibility evaluation
+✔ Confidence percentage score
+✔ Detailed report of source trustworthiness
+✔ Modern UI & smooth dashboard experience
+✔ Logs and access stored securely in MongoDB
+✔ Real-time response and progress indication
 
-The application securely manages user authentication through Email/Password and Google Sign-In, ensuring only verified users can access the analysis feature. MongoDB handles user data and analysis logs, while the Node.js/Express backend provides API endpoints for communication between the React client and the Python-based AI model server. The architecture ensures scalability and smooth real-time data flow across all services.
+🧠 How It Works
 
-<img width="1899" height="902" alt="Screenshot 2025-12-30 103247" src="https://github.com/user-attachments/assets/ff69533f-fe1f-43ef-b7c3-79af8228853f" />
+The system uses NLP and dataset-trained AI models to analyze:
 
-This project demonstrates a powerful combination of full-stack development and AI-driven journalism support, helping users detect misinformation online efficiently. It is an excellent application of applied machine learning, cybersecurity awareness, and modern web development tools to ensure the spread of credible information.
+Source reliability
+
+Factual accuracy & claim validation
+
+Sentiment & sensational wording
+
+Dataset-based credibility patterns
+
+Results include:
+🔍 Verdict → Credible / Suspicious / Fake
+📊 Confidence Score
+📌 Key Findings & Explanation
+
+This enhances transparency by showing prediction + reasoning.
+
+🖥️ UI Screenshots
+🔐 Secure Login and Authentication
+<img src="https://github.com/user-attachments/assets/b87ed647-6a58-45c8-950f-3ceddc9f861f" alt="Auth Screenshot" />
+📊 News Analysis Dashboard
+<img src="https://github.com/user-attachments/assets/07e3cf90-1340-41c0-ba8a-daaaf0a9d0d8" alt="Dashboard Screenshot" />
+🧠 Fake News Detection Results
+<img src="https://github.com/user-attachments/assets/6d6c5120-67da-434c-92f7-b70db07e3e72" alt="Results Screenshot" />
+🔍 Real-Time User Interaction
+<img src="https://github.com/user-attachments/assets/ff69533f-fe1f-43ef-b7c3-79af8228853f" alt="UI Screenshot" />
+🛠️ Tech Stack
+Component	Technology
+Frontend	React.js, TailwindCSS
+Backend	Node.js, Express.js
+Database	MongoDB
+AI/ML	Python, NLP Model trained on Fake/Real News Datasets
+Auth	Firebase Authentication (Google Sign-In + Email Login)
+Deployment	Vercel (Client) & Backend Services
+📂 Project Structure
+
+/client  --> React Frontend
+/server  --> Node + Express API
+/model   --> Python Fake News Detection Model
 
 
-Open the given link to check the output of the project
-https://trust-meter-app.vercel.app/
+⚙️ Installation & Setup (Local)
+
+# Clone the repository
+git clone https://github.com/<your-username>/<repo-name>.git
+
+# Install client dependencies
+cd client
+npm install
+npm run dev
+
+# Install server dependencies
+cd ../server
+npm install
+npm start
+
+
+Ensure Python model service is running on its designated port.
+
+🤖 Machine Learning Model
+
+The AI engine evaluates news using:
+
+NLP feature extraction
+
+Text classification
+
+Pretrained datasets on real vs fake news
+
+Source credibility checks
+
+📌 Use Cases
+
+Journalism verification
+
+Academic research against misinformation
+
+Social media content validation
+
+Public awareness & digital safety
+
+📬 Contact
+
+Developer: Krushna Vitthal Sondkar
+📧 Email: (Add your email here)
+📌 GitHub: https://github.com/
+<your-username>
+
+⭐ Support
+
+If you like this project, please consider giving it a star ⭐ on GitHub!
+Your support motivates future enhancements 🚀
