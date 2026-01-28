@@ -1,73 +1,116 @@
-# Welcome to your Lovable project
+🛡️ Fake News Detector – AI-Powered News Authenticity Checker
 
-## Project info
+Fake News Detector is a MERN stack web application integrated with AI/ML models to analyze the credibility of online news. The platform allows users to paste any news URL and receive a credibility score, verdict, and detailed analysis report powered by Natural Language Processing (NLP).
 
-**URL**: https://lovable.dev/projects/3204ea7b-628c-40d3-920b-b9711fdcab8f
+This project aims to combat misinformation by validating source reliability, content legitimacy, and sensational framing – helping users identify fake or misleading news online.
 
-## How can I edit this code?
+🚀 Live Demo
 
-There are several ways of editing your application.
+🔗 Check it out here:
+👉 https://trust-meter-app.vercel.app/
 
-**Use Lovable**
+📌 Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3204ea7b-628c-40d3-920b-b9711fdcab8f) and start prompting.
+✔ Secure Authentication (Email/Password & Google Sign-In)
+✔ Paste any news article URL for analysis
+✔ AI-powered credibility evaluation
+✔ Confidence percentage score
+✔ Detailed report of source trustworthiness
+✔ Modern UI & smooth dashboard experience
+✔ Logs and access stored securely in MongoDB
+✔ Real-time response and progress indication
 
-Changes made via Lovable will be committed automatically to this repo.
+🧠 How It Works
 
-**Use your preferred IDE**
+The system uses NLP and dataset-trained AI models to analyze:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Source reliability
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Factual accuracy & claim validation
 
-Follow these steps:
+Sentiment & sensational wording
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Dataset-based credibility patterns
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Results include:
+🔍 Verdict → Credible / Suspicious / Fake
+📊 Confidence Score
+📌 Key Findings & Explanation
 
-# Step 3: Install the necessary dependencies.
-npm i
+This enhances transparency by showing prediction + reasoning.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+🖥️ UI Screenshots
+🔐 Secure Login and Authentication
+<img src="https://github.com/user-attachments/assets/b87ed647-6a58-45c8-950f-3ceddc9f861f" alt="Auth Screenshot" />
+📊 News Analysis Dashboard
+<img src="https://github.com/user-attachments/assets/07e3cf90-1340-41c0-ba8a-daaaf0a9d0d8" alt="Dashboard Screenshot" />
+🧠 Fake News Detection Results
+<img src="https://github.com/user-attachments/assets/6d6c5120-67da-434c-92f7-b70db07e3e72" alt="Results Screenshot" />
+🔍 Real-Time User Interaction
+<img src="https://github.com/user-attachments/assets/ff69533f-fe1f-43ef-b7c3-79af8228853f" alt="UI Screenshot" />
+🛠️ Tech Stack
+Component	Technology
+Frontend	React.js, TailwindCSS
+Backend	Node.js, Express.js
+Database	MongoDB
+AI/ML	Python, NLP Model trained on Fake/Real News Datasets
+Auth	Firebase Authentication (Google Sign-In + Email Login)
+Deployment	Vercel (Client) & Backend Services
+📂 Project Structure
+
+/client  --> React Frontend
+/server  --> Node + Express API
+/model   --> Python Fake News Detection Model
+
+
+⚙️ Installation & Setup (Local)
+
+# Clone the repository
+git clone https://github.com/<your-username>/<repo-name>.git
+
+# Install client dependencies
+cd client
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+# Install server dependencies
+cd ../server
+npm install
+npm start
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+Ensure Python model service is running on its designated port.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🤖 Machine Learning Model
 
-## What technologies are used for this project?
+The AI engine evaluates news using:
 
-This project is built with:
+NLP feature extraction
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Text classification
 
-## How can I deploy this project?
+Pretrained datasets on real vs fake news
 
-Simply open [Lovable](https://lovable.dev/projects/3204ea7b-628c-40d3-920b-b9711fdcab8f) and click on Share -> Publish.
+Source credibility checks
 
-## Can I connect a custom domain to my Lovable project?
+📌 Use Cases
 
-Yes, you can!
+Journalism verification
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Academic research against misinformation
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Social media content validation
+
+Public awareness & digital safety
+
+📬 Contact
+
+Developer: Krushna Vitthal Sondkar
+📧 Email: (Add your email here)
+📌 GitHub: https://github.com/
+<your-username>
+
+⭐ Support
+
+If you like this project, please consider giving it a star ⭐ on GitHub!
+Your support motivates future enhancements 🚀
